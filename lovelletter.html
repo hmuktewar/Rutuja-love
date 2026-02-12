@@ -3,7 +3,17 @@
 <head>
 <title>My Love Letter ❤️</title>
 <style>
-body{
+body{<style>
+body {
+    opacity: 0;
+    transition: opacity 2s;
+}
+</style>
+
+<script>
+window.onload = function() {
+    document.body.style.opacity = "1";
+}
   background:linear-gradient(135deg,#ff758c,#ff7eb3);
   display:flex;
   justify-content:center;
