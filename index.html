@@ -152,6 +152,17 @@ noBtn.onclick=function(){
 };
 
 // Yes button
+  <button onclick="goToLetter()">YES ❤️</button>
+
+<script>
+function goToLetter() {
+    document.body.style.transition = "1s";
+    document.body.style.opacity = "0";
+
+    setTimeout(function(){
+        window.location.href = "loveletter.html";
+    }, 1000);
+}
 yesBtn.onclick=function(){
   romanticMusic.pause();
   celebrationMusic.play();
